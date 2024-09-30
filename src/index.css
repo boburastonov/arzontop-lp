@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: #d6dade;
+}
+
+.card-pr div:nth-child(odd) {
+  padding-bottom: 8px;
+}
+
+.card-pr div:nth-child(odd) img {
+  margin-top: -280px;
+}
+
+.card-pr div:nth-child(even) {
+  padding-top: 8px;
+  flex-direction: column-reverse;
+}
+
+.card-pr div:nth-child(even) img {
+  margin-bottom: -280px;
+}
+
+.usage {
+  background: url('../public/2-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
