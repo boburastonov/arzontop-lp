@@ -13,6 +13,11 @@ body {
   background-color: #d6dade;
 }
 
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
 .card-pr div:nth-child(odd) {
   padding-bottom: 8px;
 }
