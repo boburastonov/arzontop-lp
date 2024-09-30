@@ -8,7 +8,7 @@ import VerticalMenu from "./verticalMenu";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="py-5 relative">
+    <header className="py-5">
       <div className="container flex items-center justify-between mx-auto bg-transparent px-2 py-5">
         <NavLink
           to={"/"}
@@ -16,16 +16,16 @@ const Header = () => {
         >
           <img src={Logo} alt="arzontop" width={100} height={20} />
         </NavLink>
-        <nav className="hidden md:block">
-          <ul className="flex">
+        <nav className="hidden md:block ">
+          <ul className="flex py-3 px-1 bg-[#f5f5f5] rounded-xl">
             <li>
               <NavLink
                 to={"/"}
                 className={({ isActive }) =>
-                  `rounded-xl rounded-r-none bg-[#F5F5F5] py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
+                  `bg-transparent py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white hover:rounded-xl focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
                     isActive
-                      ? "bg-white shadow-lg font-medium"
-                      : " bg-[#f5f5f5] font-regular"
+                      ? "bg-white shadow-xl rounded-xl font-medium"
+                      : "font-regular"
                   }`
                 }
               >
@@ -36,10 +36,10 @@ const Header = () => {
               <NavLink
                 to={"/usage"}
                 className={({ isActive }) =>
-                  `rounded-none bg-[#F5F5F5] py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
+                  `bg-transparent py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white hover:rounded-xl focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
                     isActive
-                      ? "bg-white shadow-lg font-medium"
-                      : " bg-[#f5f5f5] font-regular"
+                      ? "bg-white shadow-xl rounded-xl font-medium"
+                      : "font-regular"
                   }`
                 }
               >
@@ -50,10 +50,10 @@ const Header = () => {
               <NavLink
                 to={"/contacts"}
                 className={({ isActive }) =>
-                  `rounded-xl rounded-l-none bg-[#F5F5F5] py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
+                  `bg-transparent py-3 px-5 border border-transparent text-center text-[13px] transition-all duration-[0.3s] shadow-md hover:shadow-lg hover:bg-white hover:rounded-xl focus:bg-white focus:shadow-none active:bg-white active:shadow-none ${
                     isActive
-                      ? "bg-white shadow-lg font-medium"
-                      : " bg-[#f5f5f5] font-regular"
+                      ? "bg-white shadow-xl rounded-xl font-medium"
+                      : "font-regular"
                   }`
                 }
               >
