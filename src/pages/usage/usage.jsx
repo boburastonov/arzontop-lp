@@ -1,45 +1,53 @@
 import React from "react";
 import Header from "../../components/header";
+import image1 from "../../assets/2-1.png";
+import image2 from "../../assets/2-3.png";
+import image3 from "../../assets/2-3.png";
+import image4 from "../../assets/2-4.png";
+import image5 from "../../assets/2-5.png";
+import image6 from "../../assets/2-6.png";
+import image7 from "../../assets/2-7.png";
+import image8 from "../../assets/2-8.png";
 const cardData = [
   {
     id: 1,
-    imageSrc: "../../assets/2-1.png",
+    imageSrc: image1,
     cardText: "Скачайте приложение и пройдите регистрацию",
   },
   {
     id: 2,
-    imageSrc: "../../assets/2-2.png",
+    imageSrc: image2,
     cardText:
       "Предоставьте доступ к локации и ищите лекарства в ближайших аптеках",
   },
   {
     id: 3,
-    imageSrc: "../../assets/2-3.png",
+    imageSrc: image3,
     cardText: "Выбирайте подходящие аптеки для приобретения лекарств",
   },
   {
     id: 4,
-    imageSrc: "../../assets/2-4.png",
+    imageSrc: image4,
     cardText: "Сортируйте лекарства по нужным критериям",
   },
   {
     id: 5,
-    imageSrc: "../../assets/2-5.png",
+    imageSrc: image5,
     cardText: "Просматривайте лекарства и данные нужных аптек",
   },
   {
     id: 6,
-    imageSrc: "../../assets/2-6.png",
+    imageSrc: image6,
     cardText: "Находите нужные вам лекарства в приложении",
   },
   {
     id: 7,
-    imageSrc: "../../assets/2-7.png",
+    imageSrc: image7,
     cardText: "Ищите нужные лекарства по категориям в приложении",
   },
   {
     id: 8,
-    imageSrc: "../../assets/2-8.png",
+    imageSrc: image8,
     cardText: "Просматривайте лекарства и данные нужных аптек",
   },
 ];
