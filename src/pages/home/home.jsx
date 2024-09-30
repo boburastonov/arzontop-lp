@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "../../components/header";
-import QrCode from "../../../public/QR&Code.png";
-import LeftImg from "../../../public/1-left.png";
-import RightImg from "../../../public/1-right.png";
-import MainImg from "../../../public/phones.png";
+import QrCode from "../../assets/QR&Code.png";
+import LeftImg from "../../assets/1-left.png";
+import RightImg from "../../assets/1-right.png";
+import MainImg from "../../assets/phones.png";
 
 const Home = () => {
   return (

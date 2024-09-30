@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../../public/logo.svg";
+import Logo from "../assets/logo.svg";
 import { MdAddBusiness } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import { RiMenuFoldFill } from "react-icons/ri";
