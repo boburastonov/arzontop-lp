@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import contactBg from "../../assets/contact-bg.png";
 import { NavLink } from "react-router-dom";
 import Header from "../../components/header";
 import { GoArrowRight } from "react-icons/go";
+import ContactModal from "../../components/contactModal";
 
 const Contacts = () => {
+  const [open, setOpen] = useState(false);
+
+  const openModal = () => {
+    setOpen(!open);
+  };
+  const closeModal = () => {
+    setOpen(!open);
+  };
+
   return (
-    <section>
+    <section> 
       <Header />
       <div className="container flex flex-col mx-auto px-3 pb-3">
         <div className="w-full flex md:flex-row flex-col md:items-stretch items-center mx-auto md:h-[550px] rounded-[28px]">
@@ -36,6 +46,7 @@ const Contacts = () => {
                     Для <br /> инвесторов
                   </h3>
                   <NavLink
+                    onClick={openModal}
                     className="flex items-center justify-center lg:w-[140px] lg:h-[140px] md:w-[100px] md:h-[100px] sm:w-[80px] sm:h-[80px] w-[70px] h-[70px] bg-[#caeb1e] rounded-full hover:opacity-90"
                     to={"#"}
                   >
@@ -46,6 +57,7 @@ const Contacts = () => {
             </div>
           </article>
         </div>
+        {open && <ContactModal closeModal={closeModal} />}
       </div>
     </section>
   );
