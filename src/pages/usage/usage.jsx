@@ -54,7 +54,7 @@ const cardData = [
 
 const Usage = () => {
   return (
-    <section className="usage">
+    <section>
       <Header />
       <main className="pb-3">
         <div className="card-pr container flex lg:justify-between justify-center flex-wrap mx-auto px-2">

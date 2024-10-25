@@ -35,13 +35,6 @@ body {
   margin-bottom: -280px;
 }
 
-.usage {
-  background: url("../src/assets/2-bg.png");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-}
-
 /* Pulse animation */
 .pulse-ring {
   position: absolute;
