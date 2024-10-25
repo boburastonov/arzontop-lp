@@ -89,7 +89,7 @@ const ContactModal = ({ closeModal }) => {
             </svg>
           </button>
         </div>
-        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <h2 className="text-2xl font-bold mb-4">Связаться с нами</h2>
         <form onSubmit={sendMessage}>
           <div className="mb-4">
             <label
